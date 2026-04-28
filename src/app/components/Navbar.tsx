@@ -83,7 +83,7 @@ export function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center">
           <button
-            onClick={() => window.location.href = '/BUKSU_EEU.apk'}
+            onClick={() => window.location.href = 'BUKSU_EEU.apk'}
             style={{
               background: "#0515AB",
               color: "#fff",
@@ -119,7 +119,7 @@ export function Navbar() {
         {/* Mobile Right Side */}
         <div className="flex md:hidden items-center gap-3">
           <button
-            onClick={() => window.location.href = '/BUKSU_EEU.apk'}
+            onClick={() => window.location.href = 'BUKSU_EEU.apk'}
             style={{
               background: "#0515AB",
               color: "#fff",

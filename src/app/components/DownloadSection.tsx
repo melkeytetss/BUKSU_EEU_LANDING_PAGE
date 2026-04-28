@@ -107,7 +107,7 @@ export function DownloadSection() {
         {/* CTA Button */}
         <AnimatedSection delay={0.3} direction="scale">
           <button
-            onClick={() => window.location.href = '/BUKSU_EEU.apk'}
+            onClick={() => window.location.href = 'BUKSU_EEU.apk'}
             className="w-full sm:w-auto"
             style={{
               background: "#0515AB",

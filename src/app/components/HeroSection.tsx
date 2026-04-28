@@ -169,7 +169,7 @@ export function HeroSection() {
           <AnimatedSection delay={0.35}>
             <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
               <button
-                onClick={() => window.location.href = '/BUKSU_EEU.apk'}
+                onClick={() => window.location.href = 'BUKSU_EEU.apk'}
                 style={{
                   background: "#0515AB",
                   color: "#fff",
