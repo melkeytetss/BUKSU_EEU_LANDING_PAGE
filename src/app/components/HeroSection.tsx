@@ -1,6 +1,7 @@
 import { Download, ChevronDown } from "lucide-react";
 import { motion } from "motion/react";
 import { AnimatedSection } from "./AnimatedSection";
+import homeImg from "@/assets/home.jpg";
 
 function PhoneMockup() {
   return (
@@ -44,7 +45,7 @@ function PhoneMockup() {
         }}
       >
         <img
-          src="home.jpg"
+          src={homeImg}
           alt="App Screenshot"
           style={{
             width: "100%",

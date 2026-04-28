@@ -1,10 +1,13 @@
 import { useRef } from "react";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "./AnimatedSection";
+import homeImg from "@/assets/home.jpg";
+import productsImg from "@/assets/products.jpg";
+import ordersImg from "@/assets/orders.jpg";
 
 function HomeScreen() {
   return (
     <img
-      src="home.jpg"
+      src={homeImg}
       alt="Home"
       style={{ width: "100%", height: "100%", objectFit: "fill" }}
     />
@@ -14,7 +17,7 @@ function HomeScreen() {
 function BrowseScreen() {
   return (
     <img
-      src="products.jpg"
+      src={productsImg}
       alt="Browse Products"
       style={{ width: "100%", height: "100%", objectFit: "fill" }}
     />
@@ -24,7 +27,7 @@ function BrowseScreen() {
 function OrderStatusScreen() {
   return (
     <img
-      src="orders.jpg"
+      src={ordersImg}
       alt="Order Status"
       style={{ width: "100%", height: "100%", objectFit: "fill" }}
     />
