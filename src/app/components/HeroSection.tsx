@@ -44,7 +44,7 @@ function PhoneMockup() {
         }}
       >
         <img
-          src="/home.jpg"
+          src="home.jpg"
           alt="App Screenshot"
           style={{
             width: "100%",

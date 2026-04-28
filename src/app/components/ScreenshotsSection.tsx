@@ -4,7 +4,7 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from "./AnimatedSectio
 function HomeScreen() {
   return (
     <img
-      src="/home.jpg"
+      src="home.jpg"
       alt="Home"
       style={{ width: "100%", height: "100%", objectFit: "fill" }}
     />
@@ -14,7 +14,7 @@ function HomeScreen() {
 function BrowseScreen() {
   return (
     <img
-      src="/products.jpg"
+      src="products.jpg"
       alt="Browse Products"
       style={{ width: "100%", height: "100%", objectFit: "fill" }}
     />
@@ -24,7 +24,7 @@ function BrowseScreen() {
 function OrderStatusScreen() {
   return (
     <img
-      src="/orders.jpg"
+      src="orders.jpg"
       alt="Order Status"
       style={{ width: "100%", height: "100%", objectFit: "fill" }}
     />
