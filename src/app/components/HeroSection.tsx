@@ -1,4 +1,4 @@
-import { Download, ChevronDown, ShoppingBag, Bell, Home, Search } from "lucide-react";
+import { Download, ChevronDown } from "lucide-react";
 import { motion } from "motion/react";
 import { AnimatedSection } from "./AnimatedSection";
 
@@ -40,118 +40,18 @@ function PhoneMockup() {
           width: "100%",
           height: "100%",
           borderRadius: "28px",
-          background: "linear-gradient(160deg, #0A0828 0%, #060420 100%)",
           overflow: "hidden",
-          display: "flex",
-          flexDirection: "column",
         }}
       >
-        {/* Status bar */}
-        <div
+        <img
+          src="/home.jpg"
+          alt="App Screenshot"
           style={{
-            padding: "28px 16px 8px",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
+            width: "100%",
+            height: "100%",
+            objectFit: "fill",
           }}
-        >
-          <span style={{ color: "#DBDDE7", fontSize: "0.65rem", fontWeight: 600 }}>9:41</span>
-          <div style={{ display: "flex", gap: 4, alignItems: "center" }}>
-            <div style={{ width: 12, height: 6, borderRadius: 2, background: "#4F6EF7", opacity: 0.8 }} />
-            <div style={{ width: 3, height: 8, borderRadius: 1, background: "#DBDDE7", opacity: 0.6 }} />
-          </div>
-        </div>
-
-        {/* App Header */}
-        <div style={{ padding: "0 16px 12px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <div>
-            <div style={{ color: "#8990CB", fontSize: "0.6rem" }}>Good morning,</div>
-            <div style={{ color: "#DBDDE7", fontSize: "0.8rem", fontWeight: 700 }}>Juan dela Cruz 👋</div>
-          </div>
-          <div style={{
-            width: 28, height: 28, borderRadius: "50%",
-            background: "linear-gradient(135deg, #0515AB, #4F6EF7)",
-            display: "flex", alignItems: "center", justifyContent: "center"
-          }}>
-            <Bell size={13} strokeWidth={1.5} color="#fff" />
-          </div>
-        </div>
-
-        {/* Banner */}
-        <div style={{
-          margin: "0 12px",
-          borderRadius: "12px",
-          background: "linear-gradient(135deg, #0515AB 0%, #4F6EF7 100%)",
-          padding: "12px 14px",
-          marginBottom: "12px",
-        }}>
-          <div style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.55rem", marginBottom: 2 }}>NEW ARRIVALS</div>
-          <div style={{ color: "#fff", fontSize: "0.75rem", fontWeight: 700, lineHeight: 1.3 }}>PE Uniform Set</div>
-          <div style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.55rem", marginTop: 4 }}>Top + Bottom available</div>
-        </div>
-
-        {/* Products */}
-        <div style={{ padding: "0 12px", flex: 1, overflow: "hidden" }}>
-          <div style={{ color: "#8990CB", fontSize: "0.6rem", marginBottom: 8, fontWeight: 600 }}>AVAILABLE ITEMS</div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-            {["PE Uniform Top", "PE Uniform Bottom", "ID Lanyard"].map((item, i) => (
-              <div key={i} style={{
-                background: "rgba(79, 110, 247, 0.08)",
-                border: "1px solid rgba(79, 110, 247, 0.15)",
-                borderRadius: "8px",
-                padding: "8px 10px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                  <div style={{
-                    width: 24, height: 24, borderRadius: 6,
-                    background: "rgba(5, 21, 171, 0.4)",
-                    display: "flex", alignItems: "center", justifyContent: "center"
-                  }}>
-                    <ShoppingBag size={11} strokeWidth={1.5} color="#4F6EF7" />
-                  </div>
-                  <span style={{ color: "#DBDDE7", fontSize: "0.62rem", fontWeight: 500 }}>{item}</span>
-                </div>
-                <div style={{
-                  background: "#0515AB",
-                  color: "#fff",
-                  fontSize: "0.5rem",
-                  fontWeight: 700,
-                  padding: "3px 7px",
-                  borderRadius: "5px",
-                }}>
-                  Order
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Bottom Nav */}
-        <div style={{
-          display: "flex",
-          justifyContent: "space-around",
-          padding: "10px 8px 14px",
-          borderTop: "1px solid rgba(79, 110, 247, 0.1)",
-          marginTop: "auto",
-        }}>
-          {[
-            { Icon: Home, active: true },
-            { Icon: Search, active: false },
-            { Icon: ShoppingBag, active: false },
-          ].map(({ Icon, active }, i) => (
-            <div key={i} style={{
-              width: 36, height: 28,
-              display: "flex", alignItems: "center", justifyContent: "center",
-              borderRadius: 8,
-              background: active ? "rgba(5, 21, 171, 0.35)" : "transparent",
-            }}>
-              <Icon size={14} strokeWidth={1.5} color={active ? "#4F6EF7" : "#8990CB"} />
-            </div>
-          ))}
-        </div>
+        />
       </div>
     </div>
   );
